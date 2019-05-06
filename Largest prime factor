@@ -1,0 +1,17 @@
+ebob = 600851475143
+list = []
+i = 2
+
+
+while i <= ebob:
+    if ebob % i == 0:
+        ebob = ebob / i
+        if i not in list:
+            list.append(i)
+        i -= 1
+
+    i += 1
+
+print(list)
+
+print("The prime factor is", list[-1])
