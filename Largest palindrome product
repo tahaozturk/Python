@@ -1,0 +1,15 @@
+#paindrome number
+list = []
+
+for first_term in range(100,1000):
+    for second_term in range (100,1000):
+        string = str(first_term*second_term)
+        if string[0] == string[-1] and string[1] == string[-2]:
+            if len(string) > 5 and string[2] == string[-3] and int(string) not in list:
+                list.append(int(string))
+            elif len(string) == 5 and int(string) not in list:
+                list.append(int(string))
+
+list.sort()
+print(list)
+print("Largest palindrome is", list[-1])
