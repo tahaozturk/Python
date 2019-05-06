@@ -1,0 +1,15 @@
+first_term = 1
+second_term = 1
+i = first_term + second_term
+sum = i
+print(first_term,second_term, sep = "\n")
+
+while i < 4000000:
+    i = first_term + second_term
+    first_term = second_term
+    second_term = i
+    sum += i
+    print(i)
+
+
+print("Sum is :",sum)
