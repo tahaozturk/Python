@@ -1,0 +1,18 @@
+boundry = 1000
+i = 1
+
+while i < boundry-2:
+    a = i
+    for j in range(i, boundry-1):
+        b = j
+        for k in range(j, boundry):
+            c = k
+            if a**2+b**2 == c**2 and a+b+c==boundry:
+                print("The triplet is : {} {} {}".format(a,b,c))
+                product = a * b * c
+                i = boundry
+    i += 1
+
+
+
+print("The product is : {}".format(product))
